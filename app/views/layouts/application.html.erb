@@ -11,6 +11,7 @@
   <body>
     <header class = "row">
       <div class = "col-3">
+      <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
           You know
@@ -19,12 +20,13 @@
           <br/ >
           to code
           </div>
+          <% end %>
         </div>
       <div class="col-4 slogan">
         Splurting out unsolicted advice about entrepreneurship since 2017
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %> 
+        <%= link_to 'Contribute', new_quote_path %> 
         <%= link_to 'About', '#' %>
       </div>
 
@@ -42,9 +44,9 @@
       <div class="container">
         <div class="row">
          <div class="col-6">
-          <%= link_to "This isn't enough, I need more" , "#", class: 'next-quote'%>
+          <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote'%>
         </div>
-        <div class="col-6">
+        <div class="col-6 footer-blurb">
           Brought to you by your friendly LA neighborhood hacker, <a href="http://linkedin.com/in/danielsfskim">Daniel S. Kim</a> <br />
           Want to build your own Splurty Web app - <a href="http://thefirehoseproject.com">Learn how to code here</a>
         </div>
