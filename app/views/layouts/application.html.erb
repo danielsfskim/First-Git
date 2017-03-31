@@ -46,18 +46,17 @@
             </button>
             <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
           </div>
+          <div class="modal-body"> 
           <%= simple_form_for Quote.new do |f| %>
-          <div class="modal-body">
-              <%= f.input :saying %>
+              <%= f.input :saying %> <!-- getting our form inside of the modal -->
               <%= f.input :author %>
-              
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
             <%= f.submit 'Create', class: 'btn btn-danger' %>
           </div>
-         <% end %>
+         <% end %> <!-- getting our form inside of the modal -->
         </div>
       </div>
     </div>
